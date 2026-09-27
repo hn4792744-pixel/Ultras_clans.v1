@@ -1,0 +1,3 @@
+accepted: '<green>Invitation accepted.</green>'
+denied: '<yellow>Invitation denied.</yellow>'
+expired: '<gray>Invitation expired.</gray>'

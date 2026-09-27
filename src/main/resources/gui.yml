@@ -1,0 +1,22 @@
+# عناوين GUI الأساسية. يمكن تعديلها دون تغيير Java.
+titles:
+  clans: '<gradient:#ff3333:#8b0000>ᴄʟᴀɴs</gradient>'
+  clan-main: '<gradient:#ff3333:#8b0000>ULTRAS</gradient> <white>|</white> <gray>Clan'
+  members: '<gradient:#ff3333:#8b0000>ᴍᴇᴍʙᴇʀs</gradient>'
+  bank: '<gold>ᴄʟᴀɴ ʙᴀɴᴋ</gold>'
+  storage: '<dark_aqua>ᴄʟᴀɴ sᴛᴏʀᴀɢᴇ</dark_aqua>'
+# حجم GUI. يجب أن يكون مضاعف 9 بين 9 و54.
+sizes:
+  clans: 54
+  clan-main: 54
+  clan-info: 27
+  members: 54
+  member-info: 36
+  bank: 27
+  storage: 54
+  tasks: 54
+  top: 54
+  stats: 36
+  settings: 36
+  warps: 27
+  alliances: 36

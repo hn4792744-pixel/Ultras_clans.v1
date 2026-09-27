@@ -1,0 +1,24 @@
+# الرتب الافتراضية للأعضاء. الصلاحيات الداخلية موجودة في PermissionService.
+# يمكنك استخدام هذه القائمة كمرجع عند تخصيص الرتب لاحقًا.
+ranks:
+  owner:
+    display-name: Owner
+    priority: 100
+  coleader:
+    display-name: Co-Leader
+    priority: 90
+  general:
+    display-name: General
+    priority: 80
+  officer:
+    display-name: Officer
+    priority: 70
+  veteran:
+    display-name: Veteran
+    priority: 60
+  member:
+    display-name: Member
+    priority: 50
+  recruit:
+    display-name: Recruit
+    priority: 40

@@ -1,0 +1,4 @@
+# GUI definition for bank-deposit
+size: 54
+title: '<gradient:#ff3333:#8b0000>ULTRAS CLANS</gradient> <gray>bank-deposit</gray>'
+back-slot: 49

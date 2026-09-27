@@ -1,0 +1,2 @@
+complete: '<green>Clan task completed: <white>{task}</white> — <yellow>⚔ {reward} CP</yellow></green>'
+claim: '<green>Task reward claimed.</green>'

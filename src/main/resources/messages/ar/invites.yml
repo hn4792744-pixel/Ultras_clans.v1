@@ -1,0 +1,3 @@
+accepted: '<green>تم قبول الدعوة.</green>'
+denied: '<yellow>تم رفض الدعوة.</yellow>'
+expired: '<gray>انتهت الدعوة.</gray>'

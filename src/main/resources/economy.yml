@@ -1,0 +1,6 @@
+# Vault هو مزود الاقتصاد الأساسي.
+provider: vault
+# هذه الحقول موجودة لدعم command adapters إذا كان لديك اقتصاد مخصص.
+withdraw-command: ''
+deposit-command: ''
+balance-command: ''

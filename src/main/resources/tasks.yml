@@ -1,0 +1,26 @@
+# Task templates الأساسية. TaskService يطبقها على daily/weekly/monthly.
+templates:
+  - id: kills
+    type: kills
+    target: 10
+    reward: 10
+  - id: blocks
+    type: blocks
+    target: 500
+    reward: 5
+  - id: playtime
+    type: playtime
+    target: 120
+    reward: 10
+  - id: deposit
+    type: deposit
+    target: 5000
+    reward: 5
+  - id: members
+    type: members
+    target: 5
+    reward: 15
+  - id: ores
+    type: ores
+    target: 50
+    reward: 10

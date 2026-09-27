@@ -1,0 +1,2 @@
+complete: '<green>اكتملت مهمة الكلان: <white>{task}</white> — <yellow>⚔ {reward} CP</yellow></green>'
+claim: '<green>تم استلام مكافأة المهمة.</green>'

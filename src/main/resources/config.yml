@@ -1,0 +1,258 @@
+# ==================================================
+# ULTRAS CLANS - Core Configuration
+# ==================================================
+# اللغة الافتراضية: en أو ar
+language: en
+
+# Prefix الرئيسي في الشات والرسائل.
+prefix: '<gradient:#ff3333:#8b0000>ULTRAS |</gradient> <gray>'
+
+# إعدادات إنشاء الكلان.
+creation:
+  price: 1000.0
+  currency-symbol: '$'
+  default-open: true
+  name-min-length: 3
+  name-max-length: 16
+  allow-arabic: false
+  allow-english: true
+  allow-numbers: true
+  allow-symbols: false
+  allow-spaces: false
+  first-character-letter-only: true
+  blacklist-words: ['admin', 'owner', 'mod', 'staff']
+  reserved-names: ['ultras', 'server', 'clan']
+  creation-cooldown-seconds: 30
+
+# حدود الكلان الافتراضية.
+defaults:
+  member-limit: 10
+  max-member-limit: 50
+  bank-capacity: 50000.0
+  storage-level: 1
+  warp-capacity: 1
+  alliance-capacity: 1
+  starting-cp: 0
+  starting-level: 1
+  owner-rank: owner
+  default-rank: member
+  members-can-upgrade-capacity: false
+
+# رتب الكلان المرتبطة بـ CP.
+clan-ranks:
+  - id: bronze
+    name: Bronze
+    symbol: '🥉'
+    color: '<gray>'
+    min-cp: 0
+    max-cp: 999
+  - id: silver
+    name: Silver
+    symbol: '🥈'
+    color: '<white>'
+    min-cp: 1000
+    max-cp: 2499
+  - id: gold
+    name: Gold
+    symbol: '🥇'
+    color: '<yellow>'
+    min-cp: 2500
+    max-cp: 4999
+  - id: diamond
+    name: Diamond
+    symbol: '💎'
+    color: '<aqua>'
+    min-cp: 5000
+    max-cp: 9999
+  - id: master
+    name: Master
+    symbol: '👑'
+    color: '<gradient:#ff5555:#aa0000>'
+    min-cp: 10000
+    max-cp: 9223372036854775807
+
+# رتب الأعضاء الافتراضية. يمكن تعديلها في ranks.yml.
+member-ranks:
+  owner:
+    display-name: Owner
+    color: '<red>'
+    priority: 100
+  coleader:
+    display-name: Co-Leader
+    color: '<gold>'
+    priority: 90
+  general:
+    display-name: General
+    color: '<yellow>'
+    priority: 80
+  officer:
+    display-name: Officer
+    color: '<aqua>'
+    priority: 70
+  veteran:
+    display-name: Veteran
+    color: '<green>'
+    priority: 60
+  member:
+    display-name: Member
+    color: '<white>'
+    priority: 50
+  recruit:
+    display-name: Recruit
+    color: '<gray>'
+    priority: 40
+
+# CP. كل مصدر مستقل وقابل للإيقاف.
+points:
+  kill:
+    enabled: true
+    first: 10
+    second-within-seconds: 600
+    second-reward: 2
+    cooldown-seconds: 600
+    daily-cap: 250
+  unique-member:
+    enabled: true
+    reward: 25
+  bank-deposit:
+    enabled: true
+    cp-per-1000: 1
+    daily-cap: 100
+  activity:
+    enabled: true
+    milestones-minutes: [30, 60, 120]
+    rewards: [2, 5, 10]
+  blocks:
+    enabled: true
+    threshold: 10
+    reward: 1
+    daily-cap: 100
+  quests: true
+  events: true
+
+# بنك الكلان.
+bank:
+  enabled: true
+  deposit-amounts: [1, 10, 25, 50, 100, 1000]
+  withdraw-amounts: [1, 10, 25, 50, 100, 1000]
+  transaction-cooldown-ms: 250
+
+# Storage.
+storage:
+  max-level: 10
+  default-open-level: 1
+  rows-per-barrel-page: 6
+
+# Warps.
+warps:
+  max: 5
+  teleport-seconds: 5
+  cancel-on-damage: true
+  cancel-on-movement: true
+  cancel-on-world-change: true
+
+# Spawn.
+spawn:
+  teleport-seconds: 3
+  protection-seconds: 2
+  safe-search-radius: 8
+  respawn-at-clan-spawn: false
+
+# TPA.
+tpa:
+  enabled: true
+  teleport-seconds: 3
+  cooldown-seconds: 30
+  request-expire-seconds: 60
+  cancel-on-movement: true
+  cancel-on-damage: true
+
+# Alliances.
+alliances:
+  default-capacity: 1
+  max-capacity: 10
+  request-expire-seconds: 86400
+  default-access: false
+
+# Tasks.
+tasks:
+  enabled: true
+  daily-count: 10
+  weekly-count: 10
+  monthly-count: 10
+  timezone: 'UTC'
+  unclaimed-reward-to-clan: true
+
+# Events.
+events:
+  enabled: true
+  preparation-seconds: 15
+  freeze-seconds: 5
+  disconnect-grace-seconds: 300
+  max-rounds: 15
+  default-round-minutes: 5
+  allow-block-break: true
+  allow-block-place: true
+  restore-blocks: true
+  remove-drops-on-reset: true
+  require-wager: true
+
+# Economy. Vault إن وجد هو الافتراضي، وإلا يمكن ربط Provider خارجي.
+economy:
+  provider: vault
+  withdraw-command: ''
+  deposit-command: ''
+  balance-command: ''
+  balance-placeholder: '%vault_eco_balance%'
+
+# UC currency integration. إذا كان لديك Plugin للعملة استخدم PlaceholderAPI.
+uc-currency:
+  enabled: true
+  placeholder: '%uc_balance%'
+  parse-failure-value: 0.0
+
+# PlaceholderAPI.
+placeholders:
+  empty-value: ''
+
+# GUI safety.
+gui:
+  click-session-timeout-seconds: 120
+  confirm-timeout-seconds: 5
+  allow-shift-delete: true
+
+# Anti abuse.
+security:
+  invitation-rate-limit-ms: 1500
+  request-rate-limit-ms: 1500
+  gui-click-rate-limit-ms: 100
+  max-money-transaction: 1000000000.0
+  max-cp-transaction: 1000000000
+  prevent-negative-values: true
+  backup-on-start: true
+  backup-on-disable: true
+
+# Backups.
+backups:
+  enabled: true
+  daily-retention: 7
+  weekly-retention: 4
+
+# Sounds. يمكن تعطيل كل صوت.
+sounds:
+  enabled: true
+  success: ENTITY_PLAYER_LEVELUP
+  error: BLOCK_NOTE_BLOCK_BASS
+  click: UI_BUTTON_CLICK
+  invite: BLOCK_NOTE_BLOCK_PLING
+  request: BLOCK_NOTE_BLOCK_PLING
+  accept: ENTITY_PLAYER_LEVELUP
+  deny: BLOCK_NOTE_BLOCK_BASS
+  cp-gain: ENTITY_EXPERIENCE_ORB_PICKUP
+  cp-spend: BLOCK_AMETHYST_BLOCK_HIT
+  bank: ENTITY_EXPERIENCE_ORB_PICKUP
+  teleport: ENTITY_ENDERMAN_TELEPORT
+  event-start: ENTITY_ENDER_DRAGON_GROWL
+  event-win: UI_TOAST_CHALLENGE_COMPLETE
+  task-complete: UI_TOAST_CHALLENGE_COMPLETE
+  upgrade: BLOCK_AMETHYST_BLOCK_CHIME

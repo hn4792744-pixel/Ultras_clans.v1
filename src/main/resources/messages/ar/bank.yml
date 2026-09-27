@@ -1,0 +1,4 @@
+deposit: '<green>تم إيداع <white>{amount}</white> في بنك الكلان.</green>'
+withdraw: '<green>تم سحب <white>{amount}</white> من بنك الكلان.</green>'
+full: '<red>بنك الكلان ممتلئ.</red>'
+empty: '<red>رصيد بنك الكلان غير كافٍ.</red>'

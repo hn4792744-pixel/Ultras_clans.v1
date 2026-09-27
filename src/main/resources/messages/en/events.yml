@@ -1,0 +1,7 @@
+challenge-sent: '<green>Challenge sent to <white>{clan}</white>.</green>'
+challenge-received: '<yellow>You received a clan challenge from <white>{clan}</white>.</yellow>'
+event-start: '<red>CLAN EVENT STARTED</red>'
+event-win: '<green>Your clan won the event.</green>'
+event-loss: '<red>Your clan lost the event.</red>'
+event-draw: '<yellow>The event ended in a draw.</yellow>'
+leave-confirm: '<yellow>Leave the event? This may forfeit your side.</yellow>'

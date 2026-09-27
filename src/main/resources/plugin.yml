@@ -1,0 +1,22 @@
+name: Ultras_clans.v1
+version: '${version}'
+main: me.uc.hussein.ultrasclans.UltrasClansPlugin
+author: UC_Hussein
+description: ULTRAS CLANS - production clan system with GUI, CP, bank, storage, alliances, tasks, events and security.
+api-version: '1.21'
+softdepend: [Vault, PlaceholderAPI]
+commands:
+  clan:
+    description: ULTRAS CLANS player command
+    usage: /clan [subcommand]
+    aliases: [c]
+  clans:
+    description: Browse all clans
+    usage: /clans
+  uc:
+    description: ULTRAS CLANS administration command
+    usage: /uc clan admin ...
+permissions:
+  ultras.clans.admin:
+    description: Full ULTRAS CLANS admin access
+    default: op

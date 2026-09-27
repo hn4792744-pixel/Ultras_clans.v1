@@ -1,0 +1,4 @@
+deposit: '<green>Deposited <white>{amount}</white> into the clan bank.</green>'
+withdraw: '<green>Withdrew <white>{amount}</white> from the clan bank.</green>'
+full: '<red>The clan bank is full.</red>'
+empty: '<red>The clan bank does not have enough funds.</red>'

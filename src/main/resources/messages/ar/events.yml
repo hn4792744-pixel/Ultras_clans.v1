@@ -1,0 +1,7 @@
+challenge-sent: '<green>تم إرسال التحدي إلى <white>{clan}</white>.</green>'
+challenge-received: '<yellow>وصلك تحدي كلان من <white>{clan}</white>.</yellow>'
+event-start: '<red>بدأت فعالية الكلان</red>'
+event-win: '<green>كلانك فاز بالفعالية.</green>'
+event-loss: '<red>كلانك خسر الفعالية.</red>'
+event-draw: '<yellow>انتهت الفعالية بالتعادل.</yellow>'
+leave-confirm: '<yellow>هل تريد مغادرة الفعالية؟ قد يعتبر ذلك استسلامًا.</yellow>'

@@ -1,0 +1,6 @@
+# إعدادات Event إضافية. المواقع الفعلية تحفظ في config.yml عبر أوامر الإدارة.
+locations:
+  event1: not-set
+  event2: not-set
+  rest1: not-set
+  rest2: not-set

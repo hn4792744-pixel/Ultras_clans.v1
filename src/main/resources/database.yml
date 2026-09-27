@@ -1,0 +1,12 @@
+# نوع قاعدة البيانات. v1 يستخدم SQLite افتراضيًا عبر data.db.
+type: sqlite
+# اسم قاعدة البيانات.
+file: data.db
+# إعدادات MySQL/MariaDB للاستخدام المستقبلي/المتقدم.
+mysql:
+  host: localhost
+  port: 3306
+  database: ultras_clans
+  username: root
+  password: change-me
+  pool-size: 5
